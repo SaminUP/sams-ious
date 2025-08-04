@@ -10,7 +10,7 @@ async function checkIOU() {
     if (data[code]) {
       const ious = data[code];
       resultDiv.innerHTML = `
-        <p class="font-bold mb-2">Sam owes you:</p>
+        <p class="font-bold mb-2">Sam owes you for:</p>
         <ul class="list-disc list-inside">
           ${ious.map(iou => `<li>${iou}</li>`).join('')}
         </ul>
